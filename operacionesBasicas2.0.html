@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operacionesBasicas 2.0</title>
+</head>
+<body>
+    <h3>operaciones basicas</h3>
+    <script>
+        alert (
+            "selecciona la operación \n\n1) suma \n2) resta \n3) multiplicación \n4) división"
+        );
+
+        let operacion = parseInt(prompt(`operación: `));
+
+        let N1=Number(prompt(`introduce el primer numero: `));
+        let N2=Number(prompt(`introduce el segundo numero: `));
+
+        switch (operacion){
+            case 1 :
+                resultado=N1+N2;
+                document.write("Seleccionaste suma" + "<br>" + "<br>" + N1 + " + " + N2 + " = " + resultado);
+                break;
+            case 2 :
+                resultado=N1-N2;
+                document.write("Seleccionaste resta" + "<br>" + "<br>" + N1 + " - " + N2 + " = " + resultado);
+                break;
+            case 3 :
+                resultado=N1*N2;
+                document.write("Seleccionaste multiplicación" + "<br>" + "<br>" + N1 + " * " + N2 + " = " + resultado);
+                break;
+            case 4 :
+                resultado=N1/N2;
+                document.write("Seleccionaste división" + "<br>" + "<br>" +N1 + " / " + N2 + " = " + resultado );
+                break;
+            default :
+                document.write("operación invalida");
+        }
+    </script>
+</body>
+</html>

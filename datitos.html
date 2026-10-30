@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datitos</title>
+</head>
+<body>
+    <h3>ejemplo confirm()</h3>
+    <script>
+        let continuar = confirm(`deseas agregar datos ?`);
+        if (continuar){
+            let nombre = prompt(`ingresa tu nombre: `);
+            let edad = prompt(`ingresa tu edad: `);
+            let especialidad = prompt(`ingresa tu especialidad: `);
+            let correoElec = prompt(`ingresa tu correo electronico: `);
+
+            document.write(
+                "holaa " + nombre + "<br>" + "<br>" + 
+                "edad: " + edad + "<br>" +
+                "especialidad: " + especialidad + "<br>" +
+                "correo electronico: " + correoElec 
+            );
+        }else{
+            alert("eres floj@");
+        }
+    </script>
+</body>
+</html>
